@@ -1,9 +1,12 @@
-import React from 'react'
+import { Routes, Route } from "react-router-dom";
+import Root from "./Root";
+import "./index.css";
 
 function App() {
   return (
-    <div>App</div>
-  )
+    <Routes>
+      <Route path="/" element={<Root />} />
+    </Routes>
+  );
 }
-
-export default App
+export default App;
